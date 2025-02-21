@@ -3,6 +3,8 @@ import Bootstrap from './assets/bootstrap5.png';
 import Ccsharp from './assets/ccsharp.png';
 import KompleWeb from './assets/kompleweb.jpg';
 
+import './Course.css'
+
 const courseMap = {
     Angular,
     Bootstrap,
@@ -17,8 +19,8 @@ const courseMap = {
 
 function Course( {courseName} ) {
     console.log(courseMap[courseName]);
-    return ( <div>
-        <img src={courseMap[courseName]} alt="course" />
+    return ( <div className='courseDiv'>
+        <img className= 'course' src={courseMap[courseName]} alt="course" />
     </div> );
 }
 
